@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * Implements hook_theme() to add the template definition.
+ **/
+
+function analog_clock_theme($existing, $type, $theme, $path) {
+  $theme = array();
+  $theme['analog_clock_template'] = array(
+    'template' => 'analog-clock-template',
+  );
+  return $theme;
+}
+

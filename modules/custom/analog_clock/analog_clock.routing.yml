@@ -1,0 +1,7 @@
+analog_clock.block:
+  path: '/analog_clock'
+  defaults:
+    _title: 'Analog Clock'
+    _block: 'Drupal\analog_clock\Plugin\Block\AnalogClockBlock'
+  requirements:
+    _permission: 'access content'

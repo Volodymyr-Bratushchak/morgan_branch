@@ -1,0 +1,25 @@
+agave:
+  omega:
+    allow_clone_for_subtheme: true
+    allow_enable_disable: true
+    title: 'Default library for the agave theme'
+    description: 'Default Omega subtheme library description. Please provide a more meaningful description (and title) for this library by editing the agave.libraries.yml file.'
+    scss: 
+      style/css/agave.css: 'style/scss/agave.scss'
+  version: VERSION
+  js:
+    js/agave.js: {}
+    js/hierarchy_menu.js: {}
+    js/canvas_clock.js: {}
+    js/canvas_script.js: {}
+  css:
+    theme:
+      style/css/agave.css: {}
+      style/css/hierarchy_menu.css: {}
+    layout: 
+      #style/css/layout/some-layout-file.css: {}
+    component:
+      #style/css/components/some-component.css: {}
+  dependencies:
+    - core/jquery
+    

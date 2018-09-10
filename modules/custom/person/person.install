@@ -1,0 +1,31 @@
+<?php
+
+
+/**
+ * Update configuration from file.
+ */
+function person_update_8002() {
+
+  $config_path = drupal_get_path('module', 'person') . '/config/install/field.field.node.person.body.yml';
+  $data = \Symfony\Component\Yaml\Yaml::parse($config_path);
+  \Drupal::configFactory()
+    ->getEditable('field.field.node.body')
+    ->setData($data)
+    ->save(TRUE);
+
+  $config_path = drupal_get_path('module', 'person') . '/config/install/field.field.node.person.department.yml';
+  $data = \Symfony\Component\Yaml\Yaml::parse($config_path);
+  \Drupal::configFactory()
+    ->getEditable('field.field.node.department')
+    ->setData($data)
+    ->save(TRUE);
+
+  $config_path = drupal_get_path('module', 'person') . '/config/install/field.field.node.person.body.yml';
+  $data = \Symfony\Component\Yaml\Yaml::parse($config_path);
+  \Drupal::configFactory()
+    ->getEditable('field.field.node.last_name')
+    ->setData($data)
+    ->save(TRUE);
+
+  return 'The Fields have been updated.';
+}

@@ -1,0 +1,15 @@
+<div id="block_hierarchy_menu">
+  <ul>
+    <li> {{ parent_element.title }} </li>
+    <ul>
+      {% for child in children_bush  %}
+        <li>
+          <div><a href="/node/{{ child.nid }}">{{ child.title}}</a></div>
+          <div>
+            <img src="{{ child.image }}" alt="Image of '{{ child.title}}'">
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </ul>
+</div>

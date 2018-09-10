@@ -1,0 +1,6 @@
+name: Analog Clock
+description: 'Custom module for showing time on analog clock'
+package: custom
+type: module
+core: 8.x
+configure: 'Analog Clock'
