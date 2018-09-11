@@ -1,0 +1,27 @@
+uuid: e754f3b8-fb80-4d0d-8d9f-666c26f614d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_node_reference
+    - node.type.menu_element
+id: node.menu_element.field_node_reference
+field_name: field_node_reference
+entity_type: node
+bundle: menu_element
+label: 'node reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      menu_element: menu_element
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

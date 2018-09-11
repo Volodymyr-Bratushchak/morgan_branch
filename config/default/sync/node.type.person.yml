@@ -1,0 +1,16 @@
+uuid: 2eca0474-f53d-46fc-b4f6-abb417f363f7
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - person
+_core:
+  default_config_hash: J4yfy8nJllciwKhPP4Z9ieLR1pbsCe1SKamE5N5mlcs
+name: Person
+type: person
+description: 'Content type that can be used to add <em>Person information</em> page.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

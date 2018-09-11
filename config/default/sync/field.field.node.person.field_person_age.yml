@@ -1,0 +1,25 @@
+uuid: 88d45801-eb32-4059-88d1-1c8d9fa00c80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_person_age
+    - node.type.person
+_core:
+  default_config_hash: yYqox3iqhktKD-Me4oKKPWq2eIrobUDdeFq9c8pEESE
+id: node.person.field_person_age
+field_name: field_person_age
+entity_type: node
+bundle: person
+label: 'Age of the person'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 18
+  max: 81
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -105,7 +105,7 @@
     <session id="-570889820">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.2" value="1" />
@@ -113,7 +113,7 @@
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.31" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -166,11 +166,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/custom/hierarchy_menu/src/Plugin/Block/HierarchyMenuBlock.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+            <state relative-caret-position="426">
+              <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
               <folding>
                 <element signature="e#7#88#0#PHP" expanded="true" />
-                <element signature="e#136#168#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -287,7 +286,10 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -325,17 +327,17 @@
       <workItem from="1536256060906" duration="5425000" />
       <workItem from="1536300269016" duration="724000" />
       <workItem from="1536402407463" duration="4992000" />
+      <workItem from="1536651534624" duration="3000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57572000" />
+    <option name="totallyTimeSpent" value="57575000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="47" y="-4" width="1319" height="772" extended-state="6" />
-    <editor active="true" />
+    <frame x="46" y="-11" width="1875" height="1092" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.29850745" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29830322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -384,45 +386,15 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/custom/merlin/style/scss/layout/primary-layout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5284">
-          <caret line="398" column="65" lean-forward="true" selection-start-line="398" selection-start-column="65" selection-end-line="398" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/merlin/style/scss/layout/primary-layout.scss" />
     <entry file="file://$PROJECT_DIR$/themes/custom/merlin/style/css/clock.css" />
     <entry file="file://$PROJECT_DIR$/themes/custom/merlin/js/clock.js" />
     <entry file="file://$PROJECT_DIR$/themes/custom/merlin/style/css/flipclock.css" />
     <entry file="file://$PROJECT_DIR$/themes/custom/merlin/js/flipclock.js" />
-    <entry file="file://$PROJECT_DIR$/themes/custom/merlin/templates/page.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="709">
-          <caret line="150" column="37" lean-forward="true" selection-start-line="150" selection-start-column="37" selection-end-line="150" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/merlin/js/canvas_clock.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-810">
-          <caret line="50" column="31" lean-forward="true" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/merlin/merlin.libraries.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/merlin/style/scss/layout/morgan-layout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/merlin/templates/page.html.twig" />
+    <entry file="file://$PROJECT_DIR$/themes/custom/merlin/js/canvas_clock.js" />
+    <entry file="file://$PROJECT_DIR$/themes/custom/merlin/merlin.libraries.yml" />
+    <entry file="file://$PROJECT_DIR$/themes/custom/merlin/style/scss/layout/morgan-layout.scss" />
     <entry file="file://$PROJECT_DIR$/modules/custom/hierarchy_taxonomy/src/Controller/HierarchyTaxonomyController.php" />
     <entry file="file://$PROJECT_DIR$/modules/custom/hierarchy_taxonomy/hierarchy_taxonomy.routing.yml" />
     <entry file="file://$PROJECT_DIR$/modules/custom/hierarchy_taxonomy/hierarchy_taxonomy.info.yml" />
@@ -431,13 +403,7 @@
     <entry file="file://$PROJECT_DIR$/modules/custom/selected_nodes/src/Plugin/Block/SelectedNodesBlock.php" />
     <entry file="file://$PROJECT_DIR$/modules/custom/selected_nodes/src/Controller/SelectedNodesController.php" />
     <entry file="file://$PROJECT_DIR$/themes/custom/merlin/templates/region--sidebar-second.html.twig" />
-    <entry file="file://$PROJECT_DIR$/themes/custom/merlin/js/canvas_script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/merlin/js/canvas_script.js" />
     <entry file="file://$PROJECT_DIR$/modules/custom/hierarchy_menu/templates/hierarchy-menu-template.twig.html" />
     <entry file="file://$PROJECT_DIR$/modules/custom/selected_nodes/selected_nodes.module" />
     <entry file="file://$PROJECT_DIR$/modules/custom/hierarchy_menu/hierarchy_menu.routing.yml">
@@ -447,20 +413,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/custom/hierarchy_menu/js/hierarchy_menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/custom/hierarchy_menu/css/hierarchy_menu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom/hierarchy_menu/js/hierarchy_menu.js" />
+    <entry file="file://$PROJECT_DIR$/modules/custom/hierarchy_menu/css/hierarchy_menu.css" />
     <entry file="file://$PROJECT_DIR$/modules/custom/hierarchy_menu/src/Controller/HierarchyMenuController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -475,13 +429,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/custom/analog_clock/templates/analog-clock.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/custom/analog_clock/templates/analog-clock.html.twig" />
     <entry file="file://$PROJECT_DIR$/modules/custom/hierarchy_menu/hierarchy_menu.info.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -496,24 +444,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/custom/hierarchy_menu/hierarchy_menu.libraries.yml">
+    <entry file="file://$PROJECT_DIR$/modules/custom/hierarchy_menu/hierarchy_menu.libraries.yml" />
+    <entry file="file://$PROJECT_DIR$/themes/custom/merlin/js/hierarchy_menu.js" />
+    <entry file="file://$PROJECT_DIR$/themes/custom/merlin/style/css/hierarchy_menu.css" />
+    <entry file="file://$PROJECT_DIR$/modules/custom/hierarchy_menu/src/Plugin/Block/HierarchyMenuBlock.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/merlin/js/hierarchy_menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/merlin/style/css/hierarchy_menu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="426">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+          <folding>
+            <element signature="e#7#88#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -521,17 +461,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/custom/hierarchy_menu/src/Plugin/Block/HierarchyMenuBlock.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-          <folding>
-            <element signature="e#7#88#0#PHP" expanded="true" />
-            <element signature="e#136#168#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

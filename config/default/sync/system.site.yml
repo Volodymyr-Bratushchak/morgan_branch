@@ -1,0 +1,14 @@
+uuid: 88e2748e-6bbb-45d1-8264-72bac4930e73
+name: Morgan
+mail: volodymyr.bratushchak@ukr.net
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

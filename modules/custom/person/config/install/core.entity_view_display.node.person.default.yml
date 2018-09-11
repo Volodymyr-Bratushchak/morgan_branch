@@ -1,23 +1,52 @@
+uuid: 4b02d1e9-d8fd-46f2-9343-5040d6647732
 langcode: en
 status: true
 dependencies:
-    config:
-        - field.field.node.person.body
-        - node.type.person
-    module:
-        - text
-        - user
+  config:
+    - field.field.node.person.body
+    - field.field.node.person.field_person_age
+    - field.field.node.person.field_person_department
+    - field.field.node.person.field_person_image
+    - node.type.person
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: wOaJ_3yRcQf1jnxHt2EP5d5GaFJGPXmESMxnLhPyCxE
 id: node.person.default
 targetEntityType: node
 bundle: person
 mode: default
 content:
-    body:
-        label: hidden
-        type: text_default
-        weight: 101
-        settings: {  }
-        third_party_settings: {  }
-    links:
-        weight: 100
-hidden: {  }
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+
+  field_person_image:
+    type: image
+    weight: -1
+    region: content
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+    label: hidden
+
+  field_person_department:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_person_age: true
+  field_person_image: true

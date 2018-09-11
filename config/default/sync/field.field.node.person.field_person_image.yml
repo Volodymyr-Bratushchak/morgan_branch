@@ -1,0 +1,40 @@
+uuid: bfe3db6e-53de-4979-8051-503016d54098
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_person_image
+    - node.type.person
+  module:
+    - image
+_core:
+  default_config_hash: QP9W91wIJQwHyBfP4HJjHtKubAdK_XB0zWuZdhqJEnQ
+id: node.person.field_person_image
+field_name: field_person_image
+entity_type: node
+bundle: person
+label: 'Person image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  title_field: false
+  alt_field_required: false
+  title_field_required: false
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

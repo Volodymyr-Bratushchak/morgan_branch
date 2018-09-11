@@ -1,0 +1,20 @@
+uuid: e905c01f-6a52-457d-9785-b276dab44aa5
+langcode: en
+status: true
+dependencies:
+  module:
+    - analog_clock
+  theme:
+    - agave
+id: analogclockblock
+theme: agave
+region: sidebar_second
+weight: 0
+provider: null
+plugin: analog_clock
+settings:
+  id: analog_clock
+  label: 'Analog Clock Block'
+  provider: analog_clock
+  label_display: '0'
+visibility: {  }

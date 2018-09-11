@@ -13,19 +13,25 @@ function person_update_8002() {
     ->setData($data)
     ->save(TRUE);
 
-  $config_path = drupal_get_path('module', 'person') . '/config/install/field.field.node.person.department.yml';
+ $config_path = drupal_get_path('module', 'person') . '/config/install/field.field.node.person.field_person_image.yml';
   $data = \Symfony\Component\Yaml\Yaml::parse($config_path);
   \Drupal::configFactory()
-    ->getEditable('field.field.node.department')
+    ->getEditable('field.field.node.field_person_image')
+    ->setData($data)
+    ->save(TRUE);
+ $config_path = drupal_get_path('module', 'person') . '/config/install/field.field.node.person.field_person_age.yml';
+  $data = \Symfony\Component\Yaml\Yaml::parse($config_path);
+  \Drupal::configFactory()
+    ->getEditable('field.field.node.field_person_age')
+    ->setData($data)
+    ->save(TRUE);
+ $config_path = drupal_get_path('module', 'person') . '/config/install/field.field.node.person.field_person_department.yml';
+  $data = \Symfony\Component\Yaml\Yaml::parse($config_path);
+  \Drupal::configFactory()
+    ->getEditable('field.field.node.field_person_department')
     ->setData($data)
     ->save(TRUE);
 
-  $config_path = drupal_get_path('module', 'person') . '/config/install/field.field.node.person.body.yml';
-  $data = \Symfony\Component\Yaml\Yaml::parse($config_path);
-  \Drupal::configFactory()
-    ->getEditable('field.field.node.last_name')
-    ->setData($data)
-    ->save(TRUE);
 
   return 'The Fields have been updated.';
 }

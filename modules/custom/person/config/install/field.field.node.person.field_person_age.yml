@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_person_age
+    - node.type.person
+id: node.person.field_person_age
+field_name: field_person_age
+entity_type: node
+bundle: person
+label: 'Age of the person'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 18
+  max: 81
+  prefix: ''
+  suffix: ''
+field_type: integer

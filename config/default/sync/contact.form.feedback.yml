@@ -1,0 +1,14 @@
+uuid: 18b4c982-e8fb-4353-8feb-b75e446ce47d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - volodymyr.bratushchak@ukr.net
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

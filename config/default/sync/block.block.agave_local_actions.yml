@@ -1,0 +1,20 @@
+uuid: f4ca9ffc-ca0d-494b-b2c9-e87cbeb793fe
+langcode: en
+status: true
+dependencies:
+  theme:
+    - agave
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: agave_local_actions
+theme: agave
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

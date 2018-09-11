@@ -32,7 +32,8 @@ class HierarchyMenuBlock extends BlockBase {
       $title =  $entity -> get('title')->getValue();
       $nid =  $entity -> get('nid')->getValue();
       $reference =  $entity -> get('field_node_reference')->getValue();
-      $image = ImageStyle::load('large')->buildUrl( $entity->get('field_menu_image')->entity->getFileUri());
+     // $image = ImageStyle::load('large')->buildUrl( $entity->get('field_menu_image')->entity->getFileUri());
+      $image = file_create_url($entity->get('field_menu_image')->entity->getFileUri());
       $menu_elements[$nid[0]['value']] =[
         'title' => $nid[0]['value'] . '. ' . $title[0]['value'],
         'nid' => $nid[0]['value'],
@@ -57,11 +58,6 @@ class HierarchyMenuBlock extends BlockBase {
       '#theme' => 'hierarchy_menu_template',
       '#parent_element'=> $parent_element,
       '#children_bush' => $children_bush,
- //     '#attached' => [
- //       'library' => [
- //        'hierarchy_menu/hierarchy_menu',
- //       ],
- //     ],
     ]);
   }
 }

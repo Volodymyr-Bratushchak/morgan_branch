@@ -1,25 +1,45 @@
+uuid: 13e93fbf-48f5-4ee1-b9ee-f772563242b9
 langcode: en
 status: true
 dependencies:
-    config:
-        - core.entity_view_mode.node.teaser
-        - field.field.node.person.body
-        - node.type.person
-    module:
-        - text
-        - user
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.person.body
+    - field.field.node.person.field_person_age
+    - field.field.node.person.field_person_department
+    - field.field.node.person.field_person_image
+    - node.type.person
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: IsffZwHX133waZ45byzgau8bE9q_58geYnyoX5tlWvw
 id: node.person.teaser
 targetEntityType: node
 bundle: person
 mode: teaser
 content:
-    body:
-        label: hidden
-        type: text_summary_or_trimmed
-        weight: 101
-        settings:
-            trim_length: 600
-        third_party_settings: {  }
-    links:
-        weight: 100
-hidden: {  }
+  field_person_image:
+    type: image
+    weight: -1
+    region: content
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+    label: hidden
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_person_age: true
+  field_person_department: true
+  field_person_image: true

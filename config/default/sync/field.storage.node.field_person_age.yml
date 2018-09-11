@@ -1,0 +1,22 @@
+uuid: 11208ff8-a144-4276-9ec3-6d48de41ba5c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: edWx6nnp7-JnUOpVms17Jc447WUczgZJU3ph8AndH00
+id: node.field_person_age
+field_name: field_person_age
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

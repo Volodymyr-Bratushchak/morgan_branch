@@ -1,0 +1,24 @@
+uuid: dad77352-c5ed-49b8-b0b2-fa364d44487b
+langcode: en
+status: false
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.person
+  module:
+    - text
+_core:
+  default_config_hash: SYE-BgFlSRXzYNRqsEtAeVKcn0ku_LuarFny-jkuKpo
+id: node.person.body
+field_name: body
+entity_type: node
+bundle: person
+label: Body
+description: 'More specific information about the person.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

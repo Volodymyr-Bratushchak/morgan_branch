@@ -1,0 +1,20 @@
+uuid: 470c760c-2d17-4cc5-b6c2-999bf9b34b76
+langcode: en
+status: true
+dependencies:
+  module:
+    - hierarchy_menu
+  theme:
+    - agave
+id: hierarchymenublock
+theme: agave
+region: sidebar_second
+weight: 0
+provider: null
+plugin: hierarchy_menu
+settings:
+  id: hierarchy_menu
+  label: 'Hierarchy Menu Block'
+  provider: hierarchy_menu
+  label_display: visible
+visibility: {  }
