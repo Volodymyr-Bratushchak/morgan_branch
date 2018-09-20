@@ -1,0 +1,16 @@
+analog_clock:
+  omega:
+    allow_clone_for_subtheme: true
+    allow_enable_disable: true
+    title: 'Library for the analog_clock module'
+    description: 'Library for the analog_clock module with js files.'
+    version: VERSION
+  js:
+    js/canvas_clock.js: {}
+    js/canvas_script.js: {}
+  css:
+    theme:
+  dependencies:
+    - core/jquery
+
+    

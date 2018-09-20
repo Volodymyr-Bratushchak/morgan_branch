@@ -9,7 +9,7 @@ dependencies:
 id: analogclockblock
 theme: agave
 region: sidebar_second
-weight: 0
+weight: -8
 provider: null
 plugin: analog_clock
 settings:

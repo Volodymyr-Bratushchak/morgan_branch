@@ -1,0 +1,34 @@
+uuid: b07cc5ca-8980-4fd3-ac2e-c6e645ca2090
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - role
+_core:
+  default_config_hash: '-jEXbGIWxrTNH4cBp0e_zQswPbHPaU7i7z87d-BQ3Vg'
+id: tester
+label: Tester
+weight: 3
+is_admin: false
+permissions:
+  - 'create article content'
+  - 'create menu_element content'
+  - 'create page content'
+  - 'create person content'
+  - 'delete any article content'
+  - 'delete any menu_element content'
+  - 'delete any page content'
+  - 'delete any person content'
+  - 'delete own article content'
+  - 'delete own menu_element content'
+  - 'delete own page content'
+  - 'delete own person content'
+  - 'edit any article content'
+  - 'edit any menu_element content'
+  - 'edit any page content'
+  - 'edit any person content'
+  - 'edit own article content'
+  - 'edit own menu_element content'
+  - 'edit own page content'
+  - 'edit own person content'

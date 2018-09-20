@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.person.field_person_age
     - field.field.node.person.field_person_department
     - field.field.node.person.field_person_image
+    - field.field.node.person.field_person_promote
     - node.type.person
   module:
     - text
@@ -43,3 +44,4 @@ hidden:
   field_person_age: true
   field_person_department: true
   field_person_image: true
+  field_person_promote: true

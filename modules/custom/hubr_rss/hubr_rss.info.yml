@@ -1,0 +1,6 @@
+name: Hubr RSS
+description: 'Custom module for getting data from Hubr RSS'
+package: custom
+type: module
+core: 8.x
+configure: 'Hubr RSS'

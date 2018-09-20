@@ -5,7 +5,12 @@
     "license": "GPL-2.0-or-later",
     "require": {
         "composer/installers": "^1.0.24",
-        "wikimedia/composer-merge-plugin": "^1.4"
+        "wikimedia/composer-merge-plugin": "^1.4",
+        "drupal/views_infinite_scroll": "^1.5",
+        "google/apiclient": "^2.2",
+        "drupal/search_api": "^1.9",
+        "drupal/search_api_autocomplete": "^1.1",
+        "solarium/solarium": "^4.1"
     },
     "replace": {
         "drupal/core": "^8.5"

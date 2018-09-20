@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.person.field_person_age
     - field.field.node.person.field_person_department
     - field.field.node.person.field_person_image
+    - field.field.node.person.field_person_promote
     - image.style.thumbnail
     - node.type.person
   module:
@@ -14,7 +15,7 @@ dependencies:
     - path
     - text
 _core:
-  default_config_hash: pSXDlQSRC_FUANRI9lD5CIOGlGJXyknV4LTpwKP9Bgs
+  default_config_hash: jVFC1DePF4XnaM4cF1dYGV7Gx4Z3Nj4q5girTZGAsEA
 id: node.person.default
 targetEntityType: node
 bundle: person
@@ -57,6 +58,20 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_person_promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
     third_party_settings: {  }
   links:
     weight: 100
@@ -101,7 +116,7 @@ content:
     weight: 5
     settings:
       match_operator: CONTAINS
-      size: '60'
+      size: 60
       placeholder: ''
     region: content
     third_party_settings: {  }

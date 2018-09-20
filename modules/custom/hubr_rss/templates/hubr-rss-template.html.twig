@@ -1,0 +1,21 @@
+{#{{ attach_library('video_channel/video_channel') }}#}
+
+<div>
+  <h3>{{ main_info.title }}</h3>
+  <a href="{{ main_info.link }}">
+    <p>{{ main_info.description }}</p>
+  </a>
+  {{ image }}
+</div>
+<div>
+  <h2>Selected items</h2>
+  <ul>
+    {% for item in selected_items %}
+      <li>
+        <a href="{{ item.link }}">
+          <p>{{ item.title }}</p>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

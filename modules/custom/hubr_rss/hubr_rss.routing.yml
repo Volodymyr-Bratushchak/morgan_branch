@@ -1,0 +1,7 @@
+hubr_rss:
+  path: '/hubr_rss'
+  defaults:
+    _title: 'Hubr RSS'
+    _block: 'Drupal\hubr_rss\Plugin\Block\HubrRssBlock'
+  requirements:
+    _permission: 'access content'

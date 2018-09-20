@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * Implements hook_theme() to add the template definition.
+ **/
+
+function promote_persons_theme($existing, $type, $theme, $path) {
+  $theme = [];
+  $theme['promote_persons_template'] = [
+    'template' => 'promote-persons-template',
+    'variables' => [
+      'slides' => NULL,
+      'is_front' => NULL,
+    ],
+  ];
+  return $theme;
+}
+

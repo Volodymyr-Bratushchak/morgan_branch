@@ -1,0 +1,41 @@
+uuid: 5c247f49-bf05-4b4e-a8b6-453e1c5c2441
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.person_indexing
+    - views.view.search_in_persons
+  module:
+    - views
+    - search_api_autocomplete
+id: search_in_persons
+label: 'Search in Persons'
+index_id: person_indexing
+suggester_settings:
+  live_results:
+    fields:
+      - title
+    view_modes:
+      'entity:node':
+        person: ''
+  server:
+    fields:
+      - body
+suggester_weights:
+  live_results: -50
+  server: -49
+suggester_limits:
+  live_results: 5
+  server: 2
+search_settings:
+  'views:search_in_persons':
+    displays:
+      default: true
+      selected: {  }
+options:
+  limit: 10
+  min_length: 1
+  show_count: false
+  autosubmit: true
+  submit_button_selector: ':submit'
+  delay: null

@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.person.field_person_age
     - field.field.node.person.field_person_department
     - field.field.node.person.field_person_image
+    - field.field.node.person.field_person_promote
     - image.style.thumbnail
     - node.type.person
   module:
@@ -20,6 +21,14 @@ targetEntityType: node
 bundle: person
 mode: default
 content:
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }  
   body:
     label: hidden
     type: text_textarea_with_summary
@@ -27,6 +36,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+
   created:
     type: datetime_timestamp
     weight: 10
@@ -50,6 +60,15 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+
+  field_person_promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+
   field_person_image:
     type: image_image
     weight: 4
@@ -88,14 +107,7 @@ content:
     weight: 16
     region: content
     third_party_settings: {  }
-  title:
-    type: string_textfield
-    weight: -5
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
+
   uid:
     type: entity_reference_autocomplete
     weight: 5

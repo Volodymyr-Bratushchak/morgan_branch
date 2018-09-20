@@ -9,17 +9,15 @@ agave:
   version: VERSION
   js:
     js/agave.js: {}
-    js/hierarchy_menu.js: {}
-    js/canvas_clock.js: {}
-    js/canvas_script.js: {}
   css:
     theme:
       style/css/agave.css: {}
-      style/css/hierarchy_menu.css: {}
-    layout: 
+      style/css/chess_view.css: {}
+  layout:
       #style/css/layout/some-layout-file.css: {}
     component:
       #style/css/components/some-component.css: {}
   dependencies:
     - core/jquery
+
     

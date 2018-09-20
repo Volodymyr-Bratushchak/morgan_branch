@@ -1,0 +1,20 @@
+uuid: 47873aff-c03c-4ea8-a724-12db9eaf862f
+langcode: en
+status: true
+dependencies:
+  module:
+    - video_channel
+  theme:
+    - agave
+id: videochannel
+theme: agave
+region: sidebar_second
+weight: -7
+provider: null
+plugin: video_channel
+settings:
+  id: video_channel
+  label: 'Video Channel'
+  provider: video_channel
+  label_display: '0'
+visibility: {  }

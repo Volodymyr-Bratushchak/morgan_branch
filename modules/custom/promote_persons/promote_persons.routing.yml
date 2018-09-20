@@ -1,0 +1,7 @@
+promote_persons:
+  path: '/promote_persons'
+  defaults:
+    _title: 'Promote Persons'
+    _block: 'Drupal\promote_persons\Plugin\Block\PromotePersonsBlock'
+  requirements:
+    _permission: 'access content'

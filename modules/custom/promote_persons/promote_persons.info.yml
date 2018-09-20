@@ -1,0 +1,6 @@
+name: Promote Persons
+description: 'Custom module for owl carusel block'
+package: custom
+type: module
+core: 8.x
+configure: 'Promote Persons'

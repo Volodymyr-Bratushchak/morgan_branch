@@ -1,0 +1,19 @@
+{{ attach_library('promote_persons/promote_persons') }}
+<div class="b-carousel slick-slider slick-dotted">
+  {% for slide in slides %}
+    <div class="b-carousel__slide"
+         style="background: url('{{ slide.image }}');
+           background-position: 50% 50%;
+           background-repeat: no-repeat;
+           background-size: 100% 50%;
+           height: 220px">
+      <div class="b-example__label"
+           style="  display: block;
+           margin-left: auto;
+           margin-right: auto;
+           text-align: center;">
+        {{ slide.name }}
+      </div>
+    </div>
+  {% endfor %}
+</div>

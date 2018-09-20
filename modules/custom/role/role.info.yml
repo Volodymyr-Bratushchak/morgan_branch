@@ -1,0 +1,6 @@
+name: Role
+type: module
+description: 'Adds Custom "Tester" role of user.'
+core: 8.x
+dependencies:
+  - node

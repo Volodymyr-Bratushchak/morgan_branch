@@ -26,8 +26,10 @@ module:
   help: 0
   hierarchy_menu: 0
   history: 0
+  hubr_rss: 0
   image: 0
   kint: 0
+  language: 0
   link: 0
   menu_ui: 0
   node: 0
@@ -35,9 +37,17 @@ module:
   page_cache: 0
   path: 0
   person: 0
+  promote_persons: 0
   quickedit: 0
   rdf: 0
-  search: 0
+  role: 0
+  search_api: 0
+  search_api_autocomplete: 0
+  search_api_db: 0
+  search_api_db_defaults: 0
+  search_api_solr: 0
+  search_api_solr_defaults: 0
+  search_api_solr_devel: 0
   shortcut: 0
   system: 0
   taxonomy: 0
@@ -45,6 +55,8 @@ module:
   toolbar: 0
   tour: 0
   user: 0
+  video_channel: 0
+  views_infinite_scroll: 0
   views_ui: 0
   menu_link_content: 1
   views: 10

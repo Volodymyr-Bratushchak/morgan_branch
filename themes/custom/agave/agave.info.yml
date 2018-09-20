@@ -11,9 +11,7 @@ libraries:
 regions:
   header: Header
   page_top: 'Page Top'
-
   content: Content
-
   sidebar_second: 'Sidebar Second'
   footer: Footer
   page_bottom: 'Page Bottom'

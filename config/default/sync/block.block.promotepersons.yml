@@ -1,0 +1,26 @@
+uuid: be469b81-eef9-4ea4-8080-3c6b1e8090ee
+langcode: en
+status: true
+dependencies:
+  module:
+    - promote_persons
+    - system
+  theme:
+    - agave
+id: promotepersons
+theme: agave
+region: header
+weight: -2
+provider: null
+plugin: promote_persons
+settings:
+  id: promote_persons
+  label: 'Promote Persons'
+  provider: promote_persons
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

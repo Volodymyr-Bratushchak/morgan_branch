@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - role # This is the name of the module.
+id: tester
+label: 'Tester'
+weight: 3
+is_admin: false
+permissions: {}

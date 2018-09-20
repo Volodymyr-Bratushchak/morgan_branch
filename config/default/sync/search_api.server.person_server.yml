@@ -1,0 +1,17 @@
+uuid: a560e83c-d5fc-43c5-a15f-2a92189b0c9d
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: person_server
+name: Person_server
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: words
+  autocomplete:
+    suggest_suffix: true
+    suggest_words: true

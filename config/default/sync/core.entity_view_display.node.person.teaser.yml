@@ -8,12 +8,15 @@ dependencies:
     - field.field.node.person.field_person_age
     - field.field.node.person.field_person_department
     - field.field.node.person.field_person_image
+    - field.field.node.person.field_person_promote
+    - image.style.medium
     - node.type.person
   module:
+    - image
     - text
     - user
 _core:
-  default_config_hash: IsffZwHX133waZ45byzgau8bE9q_58geYnyoX5tlWvw
+  default_config_hash: b-migq-mf6HpnLLh99pTepa0e7riAcmNISNjSq45t28
 id: node.person.teaser
 targetEntityType: node
 bundle: person
@@ -27,6 +30,15 @@ content:
       trim_length: 600
     third_party_settings: {  }
     region: content
+  field_person_image:
+    type: image
+    weight: -1
+    region: content
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+    label: hidden
   links:
     weight: 100
     region: content
@@ -34,3 +46,5 @@ hidden:
   field_person_age: true
   field_person_department: true
   field_person_image: true
+  field_person_promote: true
+  langcode: true

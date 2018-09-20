@@ -1,0 +1,20 @@
+promote_persons:
+  omega:
+    title: 'Default library for the agave theme'
+    description: 'Default Omega subtheme library description. Please provide a more meaningful description (and title) for this library by editing the agave.libraries.yml file.'
+    scss: 
+      style/css/agave.css: 'style/scss/agave.scss'
+  version: VERSION
+  js:
+    js/front.js: {}	
+    includes/slick/slick/slick.js: {}
+    includes/slick/slick/slick.min.js: {}
+  css:
+    theme:
+      css/front.css: {}
+      includes/slick/slick/slick-theme.css: {}
+      includes/slick/slick/slick.css: {}
+  dependencies:
+    - core/jquery
+
+    

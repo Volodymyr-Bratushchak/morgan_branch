@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_person_promote
+    - node.type.person
+id: node.person.field_person_promote
+field_name: field_person_promote
+entity_type: node
+bundle: person
+label: 'Promote to front page'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean
