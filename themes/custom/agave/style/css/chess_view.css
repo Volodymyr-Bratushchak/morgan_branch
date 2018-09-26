@@ -39,6 +39,13 @@
   flex-grow: 1;
 }
 
+.views-big img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 220px;
+}
+
 .load-more {
   display: inline-block;
   text-align: left;

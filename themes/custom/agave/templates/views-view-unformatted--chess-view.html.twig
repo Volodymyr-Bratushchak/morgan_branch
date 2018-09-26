@@ -44,7 +44,8 @@
     <div{{ row.attributes.addClass(row_classes) }}>
       {% if loop.index == 3 %}
         <p>name: {{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ name }}'] }}</p>
-        {{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ image }}'] }}
+        {% set photo = file_url(row['content']['#row']._entity.image.entity.fileuri) %}          
+        <img src={{ photo }} class="chess_img">
         <p>age: {{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ age }}'] }}</p>
       {% else %}
         <p>name: {{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ name }}'] }}</p>
