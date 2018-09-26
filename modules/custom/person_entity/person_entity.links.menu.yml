@@ -1,0 +1,12 @@
+# Define the menu links for this module
+
+entity.person_entity_person.collection:
+  title: 'Person Entity: Persons Listing'
+  route_name: entity.person_entity_person.collection
+  description: 'List Persons'
+  weight: 10
+person_entity_person.admin.structure.settings:
+  title: Person Settings
+  description: 'Configure Person entity'
+  route_name:  person_entity.person_settings
+  parent: system.admin_structure

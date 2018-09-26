@@ -1,0 +1,11 @@
+view person entity:
+  title: 'View Person entity'
+add person entity:
+  title: 'Add Person entity'
+edit person entity:
+  title: 'Edit Person Entity'
+delete person entity:
+  title: 'Delete Person entity'
+administer person entity:
+  title: 'Administer Person entity'
+  restrict access: TRUE

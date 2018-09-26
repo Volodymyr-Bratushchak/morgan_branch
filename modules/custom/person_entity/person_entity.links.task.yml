@@ -1,0 +1,22 @@
+# Define the 'local' links for the module
+
+person.settings_tab:
+  route_name: person_entity.person_settings
+  title: Settings
+  base_route: person_entity.person_settings
+
+person.view:
+  route_name: entity.person_entity_person.canonical
+  base_route: entity.person_entity_person.canonical
+  title: View
+
+person.page_edit:
+  route_name: entity.person_entity_person.edit_form
+  base_route: entity.person_entity_person.canonical
+  title: Edit
+
+person.delete_confirm:
+  route_name:  entity.person_entity_person.delete_form
+  base_route:  entity.person_entity_person.canonical
+  title: Delete
+  weight: 10

@@ -43,12 +43,12 @@
 
     <div{{ row.attributes.addClass(row_classes) }}>
       {% if loop.index == 3 %}
-        <p>name: {{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ title }}'] }}</p>
-        {{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_person_image }}'] }}
-        <p>age: {{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_person_age }}'] }}</p>
+        <p>name: {{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ name }}'] }}</p>
+        {{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ image }}'] }}
+        <p>age: {{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ age }}'] }}</p>
       {% else %}
-        <p>name: {{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ title }}'] }}</p>
-        <p>age: {{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_person_age }}'] }}</p>
+        <p>name: {{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ name }}'] }}</p>
+        <p>age: {{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ age }}'] }}</p>
       {% endif %}
     </div>
 {% endfor %}

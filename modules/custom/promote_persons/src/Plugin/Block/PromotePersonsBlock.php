@@ -23,18 +23,20 @@ class PromotePersonsBlock extends BlockBase {
   */
   public function build() {
 
-    $entities = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties(['type' => 'person']);
+//    $entities = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties(['type' => 'person']);
+    $entities = \Drupal::entityTypeManager()->getStorage('person_entity_person')->loadByProperties([]);
+
     foreach ($entities as $entity) {
-      $nid = $entity->get('nid')->getValue();
-      $promote = $entity->get('field_person_promote')->getValue();
-      $age = $entity->get('field_person_age')->getValue();
-      $name = $entity->get('title')->getValue();
-      $image = file_create_url($entity->get('field_person_image')->entity->getFileUri());
+      $id = $entity->get('id')->getValue();
+      $promote = $entity->get('promoted')->getValue();
+      $age = $entity->get('age')->getValue();
+      $name = $entity->get('name')->getValue();
+      $image = file_create_url($entity->get('image')->entity->getFileUri());
       if ($promote[0]['value']) {
         $variables['home_page']['slides'][] = [
           'image' => $image,
-          'nid' => $nid[0]['value'],
-          'name' => $nid[0]['value'] . '. ' . $name[0]['value'],
+          'nid' => $id[0]['value'],
+          'name' => $id[0]['value'] . '. ' . $name[0]['value'],
           'age' => $age[0]['value'],
         ];
       }

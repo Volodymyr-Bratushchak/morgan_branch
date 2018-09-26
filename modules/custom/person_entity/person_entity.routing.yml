@@ -1,0 +1,58 @@
+# This file brings everything together. Very nifty!
+
+# Route name can be used in several places; e.g. links, redirects, and local
+# actions.
+entity.person_entity_person.canonical:
+  path: '/person_entity_person/{person_entity_person}'
+  defaults:
+  # Calls the view controller, defined in the annotation of the contact entity
+    _entity_view: 'person_entity_person'
+    _title: 'Person Content'
+  requirements:
+  # Calls the access controller of the entity, $operation 'view'
+    _entity_access: 'person_entity_person.view'
+
+entity.person_entity_person.collection:
+  path: '/person_entity_person/list'
+  defaults:
+  # Calls the list controller, defined in the annotation of the contact entity.
+    _entity_list: 'person_entity_person'
+    _title: 'Person List'
+  requirements:
+  # Checks for permission directly.
+    _permission: 'administer person entity'
+
+person_entity.person_add:
+  path: '/person_entity_person/add'
+  defaults:
+  # Calls the form.add controller, defined in the person entity.
+    _entity_form: person_entity_person.add
+    _title: 'Add Person'
+  requirements:
+    _entity_create_access: 'person_entity_person'
+
+entity.person_entity_person.edit_form:
+  path: '/person_entity_person/{person_entity_person}/edit'
+  defaults:
+  # Calls the form.edit controller, defined in the person entity.
+    _entity_form: person_entity_person.edit
+    _title: 'Edit Person'
+  requirements:
+    _entity_access: 'person_entity_person.edit'
+
+entity.person_entity_person.delete_form:
+  path: '/person/{person_entity_person}/delete'
+  defaults:
+    # Calls the form.delete controller, defined in the person entity.
+    _entity_form: person_entity_person.delete
+    _title: 'Delete Person'
+  requirements:
+    _entity_access: 'person_entity_person.delete'
+
+person_entity.person_settings:
+  path: 'admin/structure/person_entity_person_settings'
+  defaults:
+    _form: '\Drupal\person_entity\Form\PersonSettingsForm'
+    _title: 'Person Settings'
+  requirements:
+    _permission: 'administer person entity'
