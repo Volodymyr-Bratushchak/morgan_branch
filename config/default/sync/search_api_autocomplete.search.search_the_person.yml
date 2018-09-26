@@ -1,0 +1,25 @@
+uuid: 8349f726-dd55-4932-ac01-ada95b7b9d9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.person_indexing_entity
+    - views.view.search_the_person
+  module:
+    - views
+    - search_api_autocomplete
+id: search_the_person
+label: 'Search the person'
+index_id: person_indexing_entity
+suggester_settings:
+  live_results:
+    fields: {  }
+    view_modes: {  }
+suggester_weights: {  }
+suggester_limits: {  }
+search_settings:
+  'views:search_the_person':
+    displays:
+      default: true
+      selected: {  }
+options: {  }

@@ -9,7 +9,7 @@ _core:
 id: agave_local_tasks
 theme: agave
 region: content
-weight: -8
+weight: -7
 provider: null
 plugin: local_tasks_block
 settings:

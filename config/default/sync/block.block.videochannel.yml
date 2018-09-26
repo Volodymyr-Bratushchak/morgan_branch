@@ -9,7 +9,7 @@ dependencies:
 id: videochannel
 theme: agave
 region: sidebar_second
-weight: -7
+weight: -6
 provider: null
 plugin: video_channel
 settings:

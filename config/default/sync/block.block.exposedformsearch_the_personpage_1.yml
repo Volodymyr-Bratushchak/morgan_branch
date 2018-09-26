@@ -1,0 +1,23 @@
+uuid: 09cc9c8f-93ef-4647-987c-edac8fd7ed18
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search_the_person
+  module:
+    - views
+  theme:
+    - agave
+id: exposedformsearch_the_personpage_1
+theme: agave
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'views_exposed_filter_block:search_the_person-page_1'
+settings:
+  id: 'views_exposed_filter_block:search_the_person-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility: {  }

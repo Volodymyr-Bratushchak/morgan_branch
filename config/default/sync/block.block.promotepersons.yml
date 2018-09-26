@@ -10,7 +10,7 @@ dependencies:
 id: promotepersons
 theme: agave
 region: header
-weight: -2
+weight: 0
 provider: null
 plugin: promote_persons
 settings:

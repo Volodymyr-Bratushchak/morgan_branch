@@ -1,0 +1,30 @@
+uuid: 7fe6757c-7f41-4967-ba36-9b1cdea7de4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.chess_view
+  module:
+    - system
+    - views
+  theme:
+    - agave
+id: views_block__chess_view_block_1
+theme: agave
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:chess_view-block_1'
+settings:
+  id: 'views_block:chess_view-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -9,7 +9,7 @@ dependencies:
 id: hubrrss
 theme: agave
 region: sidebar_second
-weight: -5
+weight: -4
 provider: null
 plugin: hubr_rss
 settings:

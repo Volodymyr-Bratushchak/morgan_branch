@@ -9,7 +9,7 @@ dependencies:
 id: hierarchymenublock
 theme: agave
 region: sidebar_second
-weight: -6
+weight: -5
 provider: null
 plugin: hierarchy_menu
 settings:

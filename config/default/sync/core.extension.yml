@@ -19,6 +19,7 @@ module:
   devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
+  entity_reference: 0
   field: 0
   field_ui: 0
   file: 0
@@ -37,6 +38,7 @@ module:
   page_cache: 0
   path: 0
   person: 0
+  person_entity: 0
   promote_persons: 0
   quickedit: 0
   rdf: 0

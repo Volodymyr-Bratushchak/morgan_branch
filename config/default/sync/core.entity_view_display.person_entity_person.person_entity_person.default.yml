@@ -1,0 +1,56 @@
+uuid: 3c892cec-8b90-440c-92ab-83e4dd9ced30
+langcode: en
+status: true
+dependencies:
+  module:
+    - image
+    - person_entity
+    - text
+id: person_entity_person.person_entity_person.default
+targetEntityType: person_entity_person
+bundle: person_entity_person
+mode: default
+content:
+  body:
+    label: above
+    type: text_trimmed
+    weight: 6
+    region: content
+    settings:
+      trim_length: 13
+    third_party_settings: {  }
+  department:
+    label: hidden
+    weight: 0
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  image:
+    label: hidden
+    type: image_url
+    weight: 0
+    region: content
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+  name:
+    label: above
+    type: string
+    weight: -6
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  promoted:
+    label: above
+    type: boolean
+    weight: 2
+    region: content
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+hidden: {  }

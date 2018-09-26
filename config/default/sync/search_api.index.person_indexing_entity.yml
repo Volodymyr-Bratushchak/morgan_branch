@@ -1,0 +1,78 @@
+uuid: 78d8b84b-7311-4cff-945a-572b6f5280da
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_solr
+    - person_entity
+    - search_api
+  config:
+    - search_api.server.person_server
+third_party_settings:
+  search_api_solr:
+    finalize: false
+    commit_before_finalize: false
+    commit_after_finalize: false
+id: person_indexing_entity
+name: 'Person_indexing entity'
+description: ''
+read_only: false
+field_settings:
+  age:
+    label: Age
+    datasource_id: 'entity:person_entity_person'
+    property_path: age
+    type: text
+    dependencies:
+      module:
+        - person_entity
+  body:
+    label: 'Text (formatted, long)'
+    datasource_id: 'entity:person_entity_person'
+    property_path: body
+    type: text
+    dependencies:
+      module:
+        - person_entity
+  department:
+    label: Department
+    datasource_id: 'entity:person_entity_person'
+    property_path: department
+    type: text
+    dependencies:
+      module:
+        - person_entity
+  name:
+    label: Name
+    datasource_id: 'entity:person_entity_person'
+    property_path: name
+    type: text
+    dependencies:
+      module:
+        - person_entity
+datasource_settings:
+  'entity:person_entity_person': {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  highlight:
+    highlight: always
+    highlight_partial: true
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  rendered_item: {  }
+  solr_date_range:
+    weights:
+      preprocess_index: 0
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: person_server
