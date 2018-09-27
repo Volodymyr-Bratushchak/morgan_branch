@@ -1,0 +1,20 @@
+uuid: 54615d71-b2ec-4b50-98f6-381110c3ce59
+langcode: en
+status: true
+dependencies:
+  module:
+    - register_window
+  theme:
+    - agave
+id: registerwindowform
+theme: agave
+region: header
+weight: -3
+provider: null
+plugin: register_window
+settings:
+  id: register_window
+  label: 'Register Window Form'
+  provider: register_window
+  label_display: '0'
+visibility: {  }

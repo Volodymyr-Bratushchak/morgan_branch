@@ -42,6 +42,7 @@ module:
   promote_persons: 0
   quickedit: 0
   rdf: 0
+  register_window: 0
   role: 0
   search_api: 0
   search_api_autocomplete: 0
