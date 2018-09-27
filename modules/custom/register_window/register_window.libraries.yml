@@ -1,0 +1,12 @@
+register_window:
+  version: 1.x
+  css:
+    theme:
+      css/register_window.css: {}
+  js:
+    js/register_window.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.dialog.ajax
+    - core/ajax
+

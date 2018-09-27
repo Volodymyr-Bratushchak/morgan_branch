@@ -1,0 +1,6 @@
+{{ attach_library('register_window/register_window') }}
+{% if user %}
+  <p><b>{{ user }}</b> are logged</p>
+{% else %}
+  {{ button_log_reg }}
+{% endif %}

@@ -1,0 +1,30 @@
+#block-agave-powered {
+  display: block;
+  width: 80%;
+}
+
+#block-registerwindowform {
+  display: block;
+  width: 15%;
+  float: right;
+}
+
+#register, #login {
+  float: left;
+  width: 50%;
+}
+
+#register input, #login input, #login-register input{
+  background-color: #4CAF50;
+  font-size: 22px;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 2px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+input:hover {
+  opacity:1;
+}

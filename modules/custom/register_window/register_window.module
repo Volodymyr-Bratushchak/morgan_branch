@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * Implements hook_theme() to add the template definition.
+ **/
+
+function register_window_theme($existing, $type, $theme, $path) {
+  $theme = [];
+  $theme['register_window_template'] = [
+    'template' => 'register-window-template',
+    'variables' => [
+      'user' => NULL,
+      'button_log_reg' => NULL,
+    ],
+  ];
+  $theme['register_window_template_ctrl'] = [
+    'template' => 'register-window-template-ctrl',
+    'variables' => [
+      'user' => NULL,
+      'button_login' => NULL,
+      'button_register' => NULL,
+    ],
+  ];
+  return $theme;
+}
+
+function register_window_html(&$variables) {
+  $variables['page']['#attached']['library'][] = 'modal/modal';
+  $variables['page']['#attached']['library'][] = 'core/drupal.ajax';
+}
