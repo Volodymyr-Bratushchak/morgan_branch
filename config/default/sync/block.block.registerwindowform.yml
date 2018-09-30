@@ -9,7 +9,7 @@ dependencies:
 id: registerwindowform
 theme: agave
 region: header
-weight: -3
+weight: -7
 provider: null
 plugin: register_window
 settings:
