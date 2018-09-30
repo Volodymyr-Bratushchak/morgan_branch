@@ -1,7 +1,7 @@
 <?php
 
-/* modules/custom/register_window/templates/register-window-template-ctrl.html.twig */
-class __TwigTemplate_735be2eea794a9e31835d26c8d24ba4c0326bbbc7457abe7c1d6021cdc3bdba4 extends Twig_Template
+/* core/themes/stable/templates/admin/system-config-form.html.twig */
+class __TwigTemplate_32253a2c15f80d9ef35a4049a5ade38767346f26710a1741bf2e9d096061c13b extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -17,13 +17,13 @@ class __TwigTemplate_735be2eea794a9e31835d26c8d24ba4c0326bbbc7457abe7c1d6021cdc3
     {
         $tags = array();
         $filters = array();
-        $functions = array("attach_library" => 1);
+        $functions = array();
 
         try {
             $this->env->getExtension('Twig_Extension_Sandbox')->checkSecurity(
                 array(),
                 array(),
-                array('attach_library')
+                array()
             );
         } catch (Twig_Sandbox_SecurityError $e) {
             $e->setSourceContext($this->getSourceContext());
@@ -39,22 +39,15 @@ class __TwigTemplate_735be2eea794a9e31835d26c8d24ba4c0326bbbc7457abe7c1d6021cdc3
             throw $e;
         }
 
-        // line 1
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->env->getExtension('Drupal\Core\Template\TwigExtension')->attachLibrary("register_window/register_window"), "html", null, true));
-        echo "
-
-";
-        // line 3
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["button_login"] ?? null), "html", null, true));
+        // line 15
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["form"] ?? null), "html", null, true));
         echo "
 ";
-        // line 4
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["button_register"] ?? null), "html", null, true));
     }
 
     public function getTemplateName()
     {
-        return "modules/custom/register_window/templates/register-window-template-ctrl.html.twig";
+        return "core/themes/stable/templates/admin/system-config-form.html.twig";
     }
 
     public function isTraitable()
@@ -64,7 +57,7 @@ class __TwigTemplate_735be2eea794a9e31835d26c8d24ba4c0326bbbc7457abe7c1d6021cdc3
 
     public function getDebugInfo()
     {
-        return array (  52 => 4,  48 => 3,  43 => 1,);
+        return array (  43 => 15,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -77,9 +70,21 @@ class __TwigTemplate_735be2eea794a9e31835d26c8d24ba4c0326bbbc7457abe7c1d6021cdc3
 
     public function getSourceContext()
     {
-        return new Twig_Source("{{ attach_library('register_window/register_window') }}
-
-{{ button_login }}
-{{ button_register}}", "modules/custom/register_window/templates/register-window-template-ctrl.html.twig", "/var/www/morgan/modules/custom/register_window/templates/register-window-template-ctrl.html.twig");
+        return new Twig_Source("{#
+/**
+ * @file
+ * Theme override for a system settings form.
+ *
+ * This template will be used when a system config form specifies 'config_form'
+ * as its #theme callback.  Otherwise, by default, system config forms will be
+ * themed by form.html.twig. This does not alter the appearance of a form at all,
+ * but is provided as a convenience for themers.
+ *
+ * Available variables:
+ * - form: The confirm form.
+ */
+#}
+{{ form }}
+", "core/themes/stable/templates/admin/system-config-form.html.twig", "/var/www/morgan/core/themes/stable/templates/admin/system-config-form.html.twig");
     }
 }

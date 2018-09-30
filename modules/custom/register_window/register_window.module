@@ -28,3 +28,55 @@ function register_window_html(&$variables) {
   $variables['page']['#attached']['library'][] = 'modal/modal';
   $variables['page']['#attached']['library'][] = 'core/drupal.ajax';
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function register_window_form_alter (&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'user_login_form') {
+    $form['name']['#ajax'] = [
+      'callback' => 'Drupal\register_window\Form\RegisterWindowForm::validateNameAjax',
+      'event' => 'change',
+      'progress' => [
+        'type' => 'throbber',
+      ],
+    ];
+    $form['name']['#prefix']= '<div class="name-validation-message"></div>';
+
+    $form['actions']['submit']['#ajax'] = [
+      'callback' => 'Drupal\register_window\Form\RegisterWindowForm::ajaxSubmitCallback',
+      'event' => 'click',
+      'progress' => [
+        'type' => 'throbber',
+      ],
+    ];
+  }
+  if ($form_id == 'user_register_form') {
+    $form['account']['name']['#prefix']= '<div class="name-validation-message"></div>';
+    $form['account']['name']['#ajax'] = [
+      'callback' => 'Drupal\register_window\Form\RegisterWindowForm::validateNameRegisterAjax',
+      'event' => 'change',
+      'progress' => [
+        'type' => 'throbber',
+      ],
+    ];
+
+    $form['account']['mail']['#prefix']= '<div class="mail-validation-message"></div>';
+    $form['account']['mail']['#ajax'] = [
+      'callback' => 'Drupal\register_window\Form\RegisterWindowForm::validateMailRegisterAjax',
+      'event' => 'change',
+      'progress' => [
+        'type' => 'throbber',
+      ],
+    ];
+
+    $form['actions']['submit']['#ajax'] = [
+      'callback' => 'Drupal\register_window\Form\RegisterWindowForm::ajaxSubmitRegisterCallback',
+      'event' => 'click',
+      'progress' => [
+        'type' => 'throbber',
+      ],
+    ];
+  }
+}
+

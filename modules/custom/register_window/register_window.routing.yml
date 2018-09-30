@@ -2,6 +2,7 @@ register_window.form:
   path: '/register_window'
   defaults:
     _title: 'Register Window'
+    _form: 'Drupal\register_window\Form\RegisterWindowForm'
     _controller: 'Drupal\register_window\Controller\RegisterWindowController::content'
     _block: 'Drupal\register_window\Plugin\Block\RegisterWindowBlock'
   requirements:

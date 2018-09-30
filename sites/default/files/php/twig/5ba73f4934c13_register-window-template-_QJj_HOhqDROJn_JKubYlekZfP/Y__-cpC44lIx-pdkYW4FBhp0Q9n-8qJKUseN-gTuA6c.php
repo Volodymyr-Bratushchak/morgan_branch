@@ -1,7 +1,7 @@
 <?php
 
-/* modules/custom/register_window/templates/register-window-template.html.twig */
-class __TwigTemplate_1aab144dd53609d1b960e476d91e5e113219a73bd34966d2a26ce7dbfc86c56e extends Twig_Template
+/* modules/custom/register_window/templates/register-window-template-ctrl.html.twig */
+class __TwigTemplate_735be2eea794a9e31835d26c8d24ba4c0326bbbc7457abe7c1d6021cdc3bdba4 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -15,13 +15,13 @@ class __TwigTemplate_1aab144dd53609d1b960e476d91e5e113219a73bd34966d2a26ce7dbfc8
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $tags = array("if" => 2);
+        $tags = array();
         $filters = array();
         $functions = array("attach_library" => 1);
 
         try {
             $this->env->getExtension('Twig_Extension_Sandbox')->checkSecurity(
-                array('if'),
+                array(),
                 array(),
                 array('attach_library')
             );
@@ -42,26 +42,21 @@ class __TwigTemplate_1aab144dd53609d1b960e476d91e5e113219a73bd34966d2a26ce7dbfc8
         // line 1
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->env->getExtension('Drupal\Core\Template\TwigExtension')->attachLibrary("register_window/register_window"), "html", null, true));
         echo "
+
 ";
-        // line 2
-        if (($context["user"] ?? null)) {
-            // line 3
-            echo "  <p><b>";
-            echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["user"] ?? null), "html", null, true));
-            echo "</b> are logged</p>
+        // line 3
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["button_login"] ?? null), "html", null, true));
+        echo "
 ";
-        } else {
-            // line 5
-            echo "  ";
-            echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["button_log_reg"] ?? null), "html", null, true));
-            echo "
-";
-        }
+        // line 4
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["button_register"] ?? null), "html", null, true));
+        echo "
+<div class=\"login-register-window\"></div>";
     }
 
     public function getTemplateName()
     {
-        return "modules/custom/register_window/templates/register-window-template.html.twig";
+        return "modules/custom/register_window/templates/register-window-template-ctrl.html.twig";
     }
 
     public function isTraitable()
@@ -71,7 +66,7 @@ class __TwigTemplate_1aab144dd53609d1b960e476d91e5e113219a73bd34966d2a26ce7dbfc8
 
     public function getDebugInfo()
     {
-        return array (  55 => 5,  49 => 3,  47 => 2,  43 => 1,);
+        return array (  52 => 4,  48 => 3,  43 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -85,10 +80,9 @@ class __TwigTemplate_1aab144dd53609d1b960e476d91e5e113219a73bd34966d2a26ce7dbfc8
     public function getSourceContext()
     {
         return new Twig_Source("{{ attach_library('register_window/register_window') }}
-{% if user %}
-  <p><b>{{ user }}</b> are logged</p>
-{% else %}
-  {{ button_log_reg }}
-{% endif %}", "modules/custom/register_window/templates/register-window-template.html.twig", "/var/www/morgan/modules/custom/register_window/templates/register-window-template.html.twig");
+
+{{ button_login }}
+{{ button_register}}
+<div class=\"login-register-window\"></div>", "modules/custom/register_window/templates/register-window-template-ctrl.html.twig", "/var/www/morgan/modules/custom/register_window/templates/register-window-template-ctrl.html.twig");
     }
 }
