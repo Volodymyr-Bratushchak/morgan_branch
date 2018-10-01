@@ -15,7 +15,7 @@ class __TwigTemplate_cbef59cf6a37bcfa43358e2afe167d0262a610429800fcd3928b9b3091f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $tags = array("if" => 89);
+        $tags = array("if" => 88);
         $filters = array();
         $functions = array();
 
@@ -41,23 +41,25 @@ class __TwigTemplate_cbef59cf6a37bcfa43358e2afe167d0262a610429800fcd3928b9b3091f
 
         // line 76
         echo "
-
-<div id=\"page-wrapper\" class=\"clearfix\">
+<div id=\"page-wrapper\" class=\"clearfix\" style=\"background-image:url(";
+        // line 77
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["font_image"] ?? null), "html", null, true));
+        echo ");\">
   <div id=\"page\" class=\"clearfix ";
-        // line 79
+        // line 78
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["page_classes"] ?? null), "html", null, true));
         echo "\">
 
     <header id=\"header-outer-wrapper\" class=\"outer-wrapper clearfix ";
-        // line 81
+        // line 80
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->renderVar(((($context["secondary_menu"] ?? null)) ? ("with-secondary-menu") : ("without-secondary-menu"))));
         echo "\" role=\"banner\">
       <div id=\"header-layout\" class=\"";
-        // line 82
+        // line 81
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["region_classes"] ?? null), "header", array()), "html", null, true));
         echo " inner-wrapper clearfix\">
         ";
-        // line 83
+        // line 82
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["page"] ?? null), "header", array()), "html", null, true));
         echo "
       </div>
@@ -65,203 +67,202 @@ class __TwigTemplate_cbef59cf6a37bcfa43358e2afe167d0262a610429800fcd3928b9b3091f
   
     <section id=\"core-outer-wrapper\" class=\"outer-wrapper clearfix\">
       <div id=\"core-layout\" class=\"";
-        // line 88
+        // line 87
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["region_classes"] ?? null), "core", array()), "html", null, true));
         echo " inner-wrapper clearfix\">
         ";
-        // line 89
+        // line 88
         if ($this->getAttribute(($context["page"] ?? null), "highlighted", array())) {
-            // line 90
+            // line 89
             echo "          ";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["page"] ?? null), "highlighted", array()), "html", null, true));
             echo "
         ";
         }
-        // line 92
+        // line 91
         echo "      </div>
     </section>
-    
     ";
-        // line 95
+        // line 93
         if (((($this->getAttribute(($context["page"] ?? null), "preface_first", array()) || $this->getAttribute(($context["page"] ?? null), "preface_second", array())) || $this->getAttribute(($context["page"] ?? null), "preface_third", array())) || $this->getAttribute(($context["page"] ?? null), "preface_fourth", array()))) {
-            // line 96
+            // line 94
             echo "    <section id=\"preface-outer-wrapper\" class=\"outer-wrapper clearfix\">
       <div id=\"preface-layout\" class=\"";
-            // line 97
+            // line 95
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["region_classes"] ?? null), "preface", array()), "html", null, true));
             echo " inner-wrapper clearfix\">
         
         ";
-            // line 99
+            // line 97
             if ($this->getAttribute(($context["page"] ?? null), "preface_first", array())) {
-                // line 100
+                // line 98
                 echo "          ";
                 echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["page"] ?? null), "preface_first", array()), "html", null, true));
                 echo "
         ";
             }
-            // line 102
+            // line 100
             echo "        
         ";
-            // line 103
+            // line 101
             if ($this->getAttribute(($context["page"] ?? null), "preface_second", array())) {
-                // line 104
+                // line 102
                 echo "          ";
                 echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["page"] ?? null), "preface_second", array()), "html", null, true));
                 echo "
         ";
             }
-            // line 106
+            // line 104
             echo "        
         ";
-            // line 107
+            // line 105
             if ($this->getAttribute(($context["page"] ?? null), "preface_third", array())) {
-                // line 108
+                // line 106
                 echo "          ";
                 echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["page"] ?? null), "preface_third", array()), "html", null, true));
                 echo "
         ";
             }
-            // line 110
+            // line 108
             echo "        
         ";
-            // line 111
+            // line 109
             if ($this->getAttribute(($context["page"] ?? null), "preface_fourth", array())) {
-                // line 112
+                // line 110
                 echo "          ";
                 echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["page"] ?? null), "preface_fourth", array()), "html", null, true));
                 echo "
         ";
             }
-            // line 114
+            // line 112
             echo "        
       </div><!-- /#preface-layout -->
     </section> <!-- /#preface-wrapper -->
     ";
         }
-        // line 118
+        // line 116
         echo "
     <section id=\"content-outer-wrapper\" class=\"outer-wrapper clearfix\">
       <div id=\"main-layout\" class=\"";
-        // line 120
+        // line 118
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["region_classes"] ?? null), "main", array()), "html", null, true));
         echo " inner-wrapper clearfix\">
         
         ";
-        // line 122
+        // line 120
         if ($this->getAttribute(($context["page"] ?? null), "content", array())) {
-            // line 123
+            // line 121
             echo "          ";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["page"] ?? null), "content", array()), "html", null, true));
             echo "
         ";
         }
-        // line 124
+        // line 122
         echo "  
     
         ";
-        // line 126
+        // line 124
         if ($this->getAttribute(($context["page"] ?? null), "sidebar_first", array())) {
-            // line 127
+            // line 125
             echo "          ";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["page"] ?? null), "sidebar_first", array()), "html", null, true));
             echo "
         ";
         }
-        // line 129
+        // line 127
         echo "    
         ";
-        // line 130
+        // line 128
         if ($this->getAttribute(($context["page"] ?? null), "sidebar_second", array())) {
-            // line 131
+            // line 129
             echo "          ";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["page"] ?? null), "sidebar_second", array()), "html", null, true));
             echo "
         ";
         }
-        // line 133
+        // line 131
         echo "    
       </div><!-- /#main -->
     </section><!-- /#main-outer-wrapper -->
   
     ";
-        // line 137
+        // line 135
         if (((($this->getAttribute(($context["page"] ?? null), "postscript_first", array()) || $this->getAttribute(($context["page"] ?? null), "postscript_second", array())) || $this->getAttribute(($context["page"] ?? null), "postscript_third", array())) || $this->getAttribute(($context["page"] ?? null), "postscript_fourth", array()))) {
-            // line 138
+            // line 136
             echo "    <section id=\"postscript-outer-wrapper\" class=\"outer-wrapper clearfix\">
       <div id=\"postscript-layout\" class=\"";
-            // line 139
+            // line 137
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["region_classes"] ?? null), "postscript", array()), "html", null, true));
             echo " inner-wrapper clearfix\">
         
         ";
-            // line 141
+            // line 139
             if ($this->getAttribute(($context["page"] ?? null), "postscript_first", array())) {
-                // line 142
+                // line 140
                 echo "          ";
                 echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["page"] ?? null), "postscript_first", array()), "html", null, true));
                 echo "
         ";
             }
-            // line 144
+            // line 142
             echo "        
         ";
-            // line 145
+            // line 143
             if ($this->getAttribute(($context["page"] ?? null), "postscript_second", array())) {
-                // line 146
+                // line 144
                 echo "          ";
                 echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["page"] ?? null), "postscript_second", array()), "html", null, true));
                 echo "
         ";
             }
-            // line 148
+            // line 146
             echo "        
         ";
-            // line 149
+            // line 147
             if ($this->getAttribute(($context["page"] ?? null), "postscript_third", array())) {
-                // line 150
+                // line 148
                 echo "          ";
                 echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["page"] ?? null), "postscript_third", array()), "html", null, true));
                 echo "
         ";
             }
-            // line 152
+            // line 150
             echo "        
         ";
-            // line 153
+            // line 151
             if ($this->getAttribute(($context["page"] ?? null), "postscript_fourth", array())) {
-                // line 154
+                // line 152
                 echo "          ";
                 echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["page"] ?? null), "postscript_fourth", array()), "html", null, true));
                 echo "
         ";
             }
-            // line 156
+            // line 154
             echo "        
       </div><!-- /#postscript-layout -->
     </section> <!-- /#postscript-outer-wrapper -->
     ";
         }
-        // line 160
+        // line 158
         echo "    
     ";
-        // line 161
+        // line 159
         if ($this->getAttribute(($context["page"] ?? null), "footer", array())) {
-            // line 162
+            // line 160
             echo "    <footer id=\"footer-outer-wrapper\" class=\"outer-wrapper clearfix\">
       <div id=\"footer-layout\" role=\"contentinfo\" class=\"";
-            // line 163
+            // line 161
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["region_classes"] ?? null), "footer", array()), "html", null, true));
             echo " inner-wrapper clearfix\">
         ";
-            // line 164
+            // line 162
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["page"] ?? null), "footer", array()), "html", null, true));
             echo "
       </div> <!-- /#footer -->
     </footer> <!-- /#footer-outer-wrapper -->
     ";
         }
-        // line 168
+        // line 166
         echo "</div></div> <!-- /#page, /#page-wrapper -->
 ";
     }
@@ -278,7 +279,7 @@ class __TwigTemplate_cbef59cf6a37bcfa43358e2afe167d0262a610429800fcd3928b9b3091f
 
     public function getDebugInfo()
     {
-        return array (  265 => 168,  258 => 164,  254 => 163,  251 => 162,  249 => 161,  246 => 160,  240 => 156,  234 => 154,  232 => 153,  229 => 152,  223 => 150,  221 => 149,  218 => 148,  212 => 146,  210 => 145,  207 => 144,  201 => 142,  199 => 141,  194 => 139,  191 => 138,  189 => 137,  183 => 133,  177 => 131,  175 => 130,  172 => 129,  166 => 127,  164 => 126,  160 => 124,  154 => 123,  152 => 122,  147 => 120,  143 => 118,  137 => 114,  131 => 112,  129 => 111,  126 => 110,  120 => 108,  118 => 107,  115 => 106,  109 => 104,  107 => 103,  104 => 102,  98 => 100,  96 => 99,  91 => 97,  88 => 96,  86 => 95,  81 => 92,  75 => 90,  73 => 89,  69 => 88,  61 => 83,  57 => 82,  53 => 81,  48 => 79,  43 => 76,);
+        return array (  266 => 166,  259 => 162,  255 => 161,  252 => 160,  250 => 159,  247 => 158,  241 => 154,  235 => 152,  233 => 151,  230 => 150,  224 => 148,  222 => 147,  219 => 146,  213 => 144,  211 => 143,  208 => 142,  202 => 140,  200 => 139,  195 => 137,  192 => 136,  190 => 135,  184 => 131,  178 => 129,  176 => 128,  173 => 127,  167 => 125,  165 => 124,  161 => 122,  155 => 121,  153 => 120,  148 => 118,  144 => 116,  138 => 112,  132 => 110,  130 => 109,  127 => 108,  121 => 106,  119 => 105,  116 => 104,  110 => 102,  108 => 101,  105 => 100,  99 => 98,  97 => 97,  92 => 95,  89 => 94,  87 => 93,  83 => 91,  77 => 89,  75 => 88,  71 => 87,  63 => 82,  59 => 81,  55 => 80,  50 => 78,  46 => 77,  43 => 76,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -367,8 +368,7 @@ class __TwigTemplate_cbef59cf6a37bcfa43358e2afe167d0262a610429800fcd3928b9b3091f
  */
 #}
 
-
-<div id=\"page-wrapper\" class=\"clearfix\">
+<div id=\"page-wrapper\" class=\"clearfix\" style=\"background-image:url({{ font_image }});\">
   <div id=\"page\" class=\"clearfix {{ page_classes }}\">
 
     <header id=\"header-outer-wrapper\" class=\"outer-wrapper clearfix {{ secondary_menu ? 'with-secondary-menu' : 'without-secondary-menu' }}\" role=\"banner\">
@@ -384,7 +384,6 @@ class __TwigTemplate_cbef59cf6a37bcfa43358e2afe167d0262a610429800fcd3928b9b3091f
         {% endif %}
       </div>
     </section>
-    
     {% if page.preface_first or page.preface_second or page.preface_third or page.preface_fourth %}
     <section id=\"preface-outer-wrapper\" class=\"outer-wrapper clearfix\">
       <div id=\"preface-layout\" class=\"{{ region_classes.preface }} inner-wrapper clearfix\">

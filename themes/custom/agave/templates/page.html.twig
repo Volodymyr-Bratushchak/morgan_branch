@@ -73,7 +73,6 @@
  * @ingroup themeable
  */
 #}
-
 <div id="page-wrapper" class="clearfix" style="background-image:url({{ font_image }});">
   <div id="page" class="clearfix {{ page_classes }}">
 
@@ -90,6 +89,7 @@
         {% endif %}
       </div>
     </section>
+    
     {% if page.preface_first or page.preface_second or page.preface_third or page.preface_fourth %}
     <section id="preface-outer-wrapper" class="outer-wrapper clearfix">
       <div id="preface-layout" class="{{ region_classes.preface }} inner-wrapper clearfix">
