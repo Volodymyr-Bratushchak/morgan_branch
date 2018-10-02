@@ -1,0 +1,20 @@
+uuid: bec556e1-8011-460d-b4f4-8c22e9905936
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact_us
+  theme:
+    - agave
+id: contactusform
+theme: agave
+region: footer
+weight: 0
+provider: null
+plugin: contact_us
+settings:
+  id: contact_us
+  label: 'Contact Us Form'
+  provider: contact_us
+  label_display: '0'
+visibility: {  }
