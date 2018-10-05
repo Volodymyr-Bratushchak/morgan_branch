@@ -1,0 +1,15 @@
+contact_pager.form:
+  path: '/contact_pager_form/{question}'
+  defaults:
+    _title: 'Contact Pager'
+    _form: 'Drupal\contact_pager\Form\ContactPagerForm'
+  requirements:
+    _role: 'administrator'
+
+contact_pager.list:
+  path: '/contact_pager_questions/{page}'
+  defaults:
+    _title: 'Contact Pager'
+    _controller: 'Drupal\contact_pager\Controller\ContactPagerController::content'
+  requirements:
+    _role: 'administrator'

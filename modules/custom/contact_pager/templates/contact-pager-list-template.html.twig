@@ -1,0 +1,35 @@
+{{ attach_library('contact_pager/contact_pager') }}
+<table id="question-list">
+  <tr>
+    <th>Number</th>
+    <th>Subject</th>
+    <th>Question</th>
+    <th>Answered</th>
+  </tr>
+  {#{{ kint(questions) }}#}
+  {% for question in questions  %}
+    {% if question.link %}
+      <tr onclick="document.location='{{ question.link }}'" >
+    {% else %}
+      <tr>
+    {% endif %}
+      <td>{{ question.pid }}</td>
+      <td>
+        <div>
+          {{ question.title }}
+        </div>
+      </td>
+      <td>
+        <div>
+          {{ question.text }}
+        </div>
+      </td>
+      <td>
+        <div>
+          {{ question.answered }}
+        </div>
+      </td>
+    </tr>
+  {% endfor %}
+</table>
+

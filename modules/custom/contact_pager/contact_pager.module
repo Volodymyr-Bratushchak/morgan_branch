@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * Implements hook_theme() to add the template definition.
+ **/
+
+function contact_pager_theme($existing, $type, $theme, $path) {
+  $theme = [];
+  $theme['contact_pager_list_template'] = [
+    'template' => 'contact-pager-list-template',
+    'variables' => [
+      'questions' => NULL,
+    ],
+  ];
+  $theme['contact_pager_answer_template'] = [
+    'template' => 'contact-pager-answer-template',
+    'variables' => [
+      'form' => NULL,
+    ],
+  ];
+  return $theme;
+}
+
+/**
+ * Implements hook_mail().
+ */
+function contact_pager_mail($key, &$message, $params) {
+
+  //  $key: An identifier of the mail template.
+  //  $message: An array to be filled in. Elements in this array include: id, to, subject, body, from, headers
+  //  $params: An array of parameters supplied by the caller of drupal_mail().
+
+  $options = [
+    'langcode' => $message['langcode'],
+  ];
+  switch ($key) {
+    case 'contact_pager_answer_template':
+      $message['from'] = \Drupal::config('system.site')->get('mail');
+      $message['subject'] = t('The answer to your question. ', $options);
+      $message['body'][] = $params['message'];
+      break;
+  }
+}
+
+
+
+
+

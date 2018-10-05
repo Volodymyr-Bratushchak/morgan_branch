@@ -1,0 +1,20 @@
+<?php
+
+use Drupal\Core\Database\Database;
+
+/**
+* Add new field to field data and revision tables.
+*/
+function contact_pager_update_8099(&$sandbox) {
+  $table = 'contact_us';
+  $field = 'answered';
+  $spec = [
+    'type' => 'int',
+    'description' => "Answered",
+    'not null' => TRUE,
+    'default' => 0,
+    'size' => 'tiny',
+  ];
+  $schema = Database::getConnection()->schema();
+  $schema->addField($table, $field, $spec);
+}

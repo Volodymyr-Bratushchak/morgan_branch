@@ -1,0 +1,6 @@
+name: Contact Pager
+description: 'Pager for admin'
+package: custom
+type: module
+core: 8.x
+configure: 'Contact Pager'
